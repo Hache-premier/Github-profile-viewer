@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Search GitHub users and explore their developer profiles."
+    />
+    <title>GitHub Profile Viewer</title>
+    <link rel="stylesheet" href="./assets/Css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="/" aria-label="GitHub Profile Viewer home">
+        <span class="logo-icon" aria-hidden="true">GH</span>
+        <span>GitHub Explorer</span>
+      </a>
+      <span class="header-label">Developer Directory</span>
+    </header>
+
+    <main class="main-content">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">DISCOVER THE DEVELOPER COMMUNITY</p>
+        <h1 id="page-title">Find your next favorite developer.</h1>
+        <p class="hero-description">
+          Search GitHub profiles, explore developer stats, and discover amazing
+          people building things around the world.
+        </p>
+
+        <form class="search-form" id="search-form">
+          <label class="visually-hidden" for="search-input">
+            Search GitHub users
+          </label>
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input
+            type="search"
+            id="search-input"
+            name="search"
+            placeholder="Search by username or name..."
+            autocomplete="off"
+            required
+          />
+          <button type="submit" id="search-button">Search</button>
+        </form>
+
+        <p class="search-hint">
+          Try a username like
+          <button type="button" class="suggestion" data-username="Gaston">
+            Gaston
+          </button>
+          or
+          <button type="button" class="suggestion" data-username="Ashley">
+            Ashley
+          </button>
+        </p>
+      </section>
+
+      <section class="results-section" aria-labelledby="results-title">
+        <div class="results-heading">
+          <div>
+            <p class="eyebrow">THE COMMUNITY</p>
+            <h2 id="results-title">Explore developers</h2>
+          </div>
+          <span class="results-count" id="results-count">Ready to search</span>
+        </div>
+
+        <p class="status-message" id="status-message" role="status">
+          Search for a developer to discover their GitHub profile.
+        </p>
+
+        <div class="profile-grid" id="profile-grid"></div>
+
+        <div class="load-more-container">
+          <button type="button" id="load-more-button" hidden>
+            Load more developers
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Built with curiosity and the
+        <a
+          href="https://docs.github.com/en/rest"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub REST API</a
+        >.
+      </p>
+    </footer>
+
+<script src="./assets/Js/script.js"></script>
+
+  </body>
+</html>
