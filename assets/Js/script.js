@@ -1,4 +1,3 @@
-
 const searchForm = document.querySelector("#search-form");
 const searchInput = document.querySelector("#search-input");
 const searchButton = document.querySelector("#search-button");
@@ -255,12 +254,9 @@ async function searchGitHubUsers(query, page = 1) {
 
     currentPage = page;
 
-    resultsCount.textContent =
-      `${formatNumber(Math.min(currentPage * RESULTS_PER_PAGE, totalResults))} of ${formatNumber(totalResults)} results`;
+    resultsCount.textContent = `${formatNumber(Math.min(currentPage * RESULTS_PER_PAGE, totalResults))} of ${formatNumber(totalResults)} results`;
 
-    setStatus(
-      `Showing GitHub profiles matching "${query}".`,
-    );
+    setStatus(`Showing GitHub profiles matching "${query}".`);
 
     updateLoadMoreButton();
   } catch (error) {
