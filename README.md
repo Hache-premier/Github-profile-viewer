@@ -63,6 +63,7 @@ The project also focuses on creating an intuitive search experience, presenting 
 ## 📸 Screenshot
 
 ![GitHub Profile Viewer Screenshot](assets/Images/github-profile-viewer.png)
+![GitHub Profile Viewer Screenshot](assets/Images/github-profile-viewer-1.png)
 
 > **Note:** Replace the screenshot path above with the actual location and filename of your project screenshot if they differ.
 
