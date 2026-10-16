@@ -144,6 +144,6 @@ You can open the application in your browser in two ways.
 ## 👨🏽‍💻 Author
 
 **Ndonwi Ashley Cheo**  
-Software Engineering Student
+Software Engineer  
 
 🌍 Based in Cameroon | Passionate about web development and continuously learning new technologies 🚀
